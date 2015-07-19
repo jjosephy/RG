@@ -1,0 +1,72 @@
+
+@media only screen and (max-device-width : 320px) {
+    .txt {
+        background-color: black;
+        color: white;
+    }
+
+    .txt:after {
+        content: "Less than 320";
+    }
+}
+
+@media only screen and (min-device-width : 321px) and (max-device-width : 480px) {
+    .txt {
+        background-color: red;
+    }
+
+    .txt:after {
+        content: "321 - 480";
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+    .txt {
+        background-color: purple;
+    }
+
+    .txt:after {
+        content: "481 - 767";
+    }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .txt { 
+        background-color: navy;
+    }
+
+    .txt:after { 
+        content: "768 - 1024";
+    }
+}
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1199px) {
+    .txt { 
+        background-color: #E2DB15;
+    }
+
+    .txt:after { 
+        content: "1025 - 1999";
+    }
+}
+
+@media only screen  and (min-width : 1200px) and (max-device-width : 1899px) {
+    .txt { 
+        background-color: blue;
+    }
+
+    .txt:after {
+        content : "1200 - 1899";
+    }
+}
+
+@media only screen  and (min-width : 1900px) {
+    .txt { 
+        background-color: purple;
+    }
+
+    .txt:after {
+        content : "Greater than 1900";
+    }
+}
