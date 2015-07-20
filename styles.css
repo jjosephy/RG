@@ -14,8 +14,7 @@ body {
     width: 100%;
     text-align: center;
     height: 35px;
-    position: absolute;
-    /*display: table;*/
+    position: relative;
 }
 
 .bg_black {
@@ -39,31 +38,68 @@ body {
 
 #header { 
     width: 100%;
-    height: 70px;
+    height: 115px;
     position: relative;
 }
 
 #searchBox { 
-	width: 60%; 
-	text-align:right; 
-	background-color:teal;  
-	top: 50%;
+	width: 100%; 
+	text-align:left;  
+	height: 50px;
 }
 
 #logo { 
-	width: 30%;
-	background-color: red; 
-	top: 50%; 
+	width: 100%; 
+	top: 0%; 
 	text-align: left;
+	height: 40px;
+}
+
+.div_logo { 
+	width: 193px; 
+	padding-left: 5px;
+	display: inline-block;
+}
+
+.table_cell { 
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+.table { 
+	display:table; 
+	height: 35px; 
+	width: 100%;
+}
+
+.search_box_cell { 
+	display:table-cell; 
+	height: 50px; 
+	vertical-align: middle;	
+}
+
+.text_box {
+	border: 1px solid white;
+	color: #333333;
+	background: white;
+	width: 200px;
+}
+
+.div_image { 
+	position: relative;
+	display: inline-block;
 }
 
 @media only screen and (max-device-width : 480px) {
     #div_ad  { 
-        top: 50%;
+        
     }
 
     #div_search { 
         top: 0%;
+        height: 80px;
     }
     
 	#searchBox { 
@@ -72,7 +108,7 @@ body {
 	
 	#logo { 
 		display: block;	
-		background-color: pink;
+		padding-top: 4px;
 	}
 }
 
